@@ -21,10 +21,7 @@ Step 3: Inside 'wagtail_hooks.py' write code below:
       from wagtail.core import hooks
       @hooks.register("insert_global_admin_css")
       def global_admin_css():
-          return format_html(
-              > '<link href="{}">',
-              static("css/admin.css")
-          )
+          return format_html('<link href="{}">',static("css/admin.css"))
     </code>
   </pre>
 
@@ -38,10 +35,7 @@ In case of custom javascript file you can add the code below under Admin Css's f
   <code>
     @hooks.register('insert_global_admin_js')
     def global_admin_js():
-      return format_html(
-          '<script src="{}"></script>',
-           static("/js/admin.js")
-      )
+      return format_html('<script src="{}"></script>',static("/js/admin.js"))
   </code>
 </pre>
 
