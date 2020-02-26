@@ -2,6 +2,7 @@
 This is the style sheet Wagtail Admin based on Bootstrap 4.x
 
 Step 1: Create Core application.
+
 <pre>
   for windows:
     py manage.py startapp core
@@ -12,8 +13,8 @@ Step 1: Create Core application.
 Step 2: Create a file named 'wagtail_hooks.py' within Core folder that you had made in Step 1.
 
 Step 3: Inside 'wagtail_hooks.py' write code below:
-<pre>
-  <plaintext>
+
+<textarea disabled>
     from django.utils.html import format_html
     from django.templatetags.static import static
     from wagtail.core import hooks
@@ -23,8 +24,7 @@ Step 3: Inside 'wagtail_hooks.py' write code below:
             '<link href="{}">',
             static("css/admin.css")
         )
-  </plaintext>
-</pre>
+</textarea>
 
 Step 4: Create 'admin.css' located in 'project_name\project_name\static\css\admin.css' .
 Step 5: Paste all of style sheets there.
