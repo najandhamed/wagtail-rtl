@@ -2,10 +2,12 @@
 This is the style sheet Wagtail Admin based on Bootstrap 4.x
 
 Step 1: Create Core application.
+<pre>
   for windows:
     py manage.py startapp core
   for other OS:
     python manage.py startapp core
+</pre>
 
 Step 2: Create a file named 'wagtail_hooks.py' within Core folder that you had made in Step 1.
 
