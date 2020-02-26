@@ -1,7 +1,7 @@
 # wagtail-rtl (version 2.8)
 This is the style sheet Wagtail Admin based on Bootstrap 4.x
 
-Step 1: Create Core application.
+#### Step 1: Create Core application.
 
 <pre>
   for windows:
@@ -10,9 +10,9 @@ Step 1: Create Core application.
     python manage.py startapp core
 </pre>
 
-Step 2: Create a file named 'wagtail_hooks.py' within Core folder that you had made in Step 1.
+#### Step 2: Create a file named 'wagtail_hooks.py' within Core folder that you had made in Step 1.
 
-Step 3: Inside 'wagtail_hooks.py' write code below:
+#### Step 3: Inside 'wagtail_hooks.py' write code below:
 
   <pre>
     <code>
@@ -24,9 +24,9 @@ Step 3: Inside 'wagtail_hooks.py' write code below:
           return format_html('<link href="{}">',static("css/admin.css"))
     </code>
   </pre>
-Step 4: Create 'admin.css' located in 'project_name\project_name\static\css\admin.css' .
-Step 5: Paste all of style sheets there.
-Step 6: enjoy.
+#### Step 4: Create 'admin.css' located in 'project_name\project_name\static\css\admin.css' .
+#### Step 5: Paste all of style sheets there.
+#### Step 6: enjoy.
 
 In case of custom javascript file you can add the code below under Admin Css's file:
 
