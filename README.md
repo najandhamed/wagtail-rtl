@@ -21,10 +21,11 @@ Step 3: Inside 'wagtail_hooks.py' write code below:
       from wagtail.core import hooks
       @hooks.register("insert_global_admin_css")
       def global_admin_css():
-          return format_html('/* <link href="{}"> */',static("css/admin.css"))
+          return format_html('Paste the code below here',static("css/admin.css"))
     </code>
   </pre>
 
+Code to paste above : <link href={}>
 Step 4: Create 'admin.css' located in 'project_name\project_name\static\css\admin.css' .
 Step 5: Paste all of style sheets there.
 Step 6: enjoy.
