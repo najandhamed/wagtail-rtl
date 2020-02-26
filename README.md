@@ -29,12 +29,12 @@ Step 5: Paste all of style sheets there.
 Step 6: enjoy.
 
 In case of custom javascript file you can add the code below under Admin Css's file:
-
+<pre>
   @hooks.register('insert_global_admin_js')
   def global_admin_js():
     return format_html(
         '<script src="{}"></script>',
         static("/js/admin.js")
     )
-
+</pre>
 Then located 'admin.js' in 'project_name\project_name\static\js\admin.js' . 
