@@ -14,28 +14,27 @@ Step 2: Create a file named 'wagtail_hooks.py' within Core folder that you had m
 
 Step 3: Inside 'wagtail_hooks.py' write code below:
 
-<blockquote>
-    <pre>
-      <code>
-        from django.utils.html import format_html
-        from django.templatetags.static import static
-        from wagtail.core import hooks
-        
-        @hooks.register("insert_global_admin_css")
-        def global_admin_css():
-            return format_html(
-                '<link href="{}">',
-                static("css/admin.css")
-            )
-      </code>
-    </pre>
-</blockquote>
+  <pre>
+    <code>
+      from django.utils.html import format_html
+      from django.templatetags.static import static
+      from wagtail.core import hooks
+
+      @hooks.register("insert_global_admin_css")
+      def global_admin_css():
+          return format_html(
+              '<link href="{}">',
+              static("css/admin.css")
+          )
+    </code>
+  </pre>
 
 Step 4: Create 'admin.css' located in 'project_name\project_name\static\css\admin.css' .
 Step 5: Paste all of style sheets there.
 Step 6: enjoy.
 
 In case of custom javascript file you can add the code below under Admin Css's file:
+
 <pre>
   <code>
     @hooks.register('insert_global_admin_js')
@@ -46,4 +45,5 @@ In case of custom javascript file you can add the code below under Admin Css's f
       )
   </code>
 </pre>
+
 Then located 'admin.js' in 'project_name\project_name\static\js\admin.js' . 
