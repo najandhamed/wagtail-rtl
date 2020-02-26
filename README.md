@@ -13,7 +13,7 @@ Step 2: Create a file named 'wagtail_hooks.py' within Core folder that you had m
 
 Step 3: Inside 'wagtail_hooks.py' write code below:
 <pre>
-  <code>
+  <plaintext>
     from django.utils.html import format_html
     from django.templatetags.static import static
     from wagtail.core import hooks
@@ -23,7 +23,7 @@ Step 3: Inside 'wagtail_hooks.py' write code below:
             '<link href="{}">',
             static("css/admin.css")
         )
-  </code>
+  </plaintext>
 </pre>
 
 Step 4: Create 'admin.css' located in 'project_name\project_name\static\css\admin.css' .
