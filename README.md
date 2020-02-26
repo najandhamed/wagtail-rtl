@@ -23,7 +23,7 @@ Step 3: Inside 'wagtail_hooks.py' write code below:
       @hooks.register("insert_global_admin_css")
       def global_admin_css():
           return format_html(
-              '<link href="{}">',
+              """'<link href="{}">', uncomment this line """
               static("css/admin.css")
           )
     </code>
